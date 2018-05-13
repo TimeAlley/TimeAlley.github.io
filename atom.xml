@@ -5,9 +5,9 @@
   <subtitle>Love ACGN,Enjoy Coding</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://TimeAlley.github.io/"/>
+  <link href="http://www.timealley.name/"/>
   <updated>2018-05-13T04:36:27.663Z</updated>
-  <id>http://TimeAlley.github.io/</id>
+  <id>http://www.timealley.name/</id>
   
   <author>
     <name>TimeAlley</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://TimeAlley.github.io/2018/05/13/hello-world/"/>
-    <id>http://TimeAlley.github.io/2018/05/13/hello-world/</id>
+    <link href="http://www.timealley.name/2018/05/13/hello-world/"/>
+    <id>http://www.timealley.name/2018/05/13/hello-world/</id>
     <published>2018-05-13T03:28:06.000Z</published>
     <updated>2018-05-13T04:36:27.663Z</updated>
     
@@ -31,10 +31,10 @@
     
     </summary>
     
-      <category term="拾光随想" scheme="http://TimeAlley.github.io/categories/%E6%8B%BE%E5%85%89%E9%9A%8F%E6%83%B3/"/>
+      <category term="拾光随想" scheme="http://www.timealley.name/categories/%E6%8B%BE%E5%85%89%E9%9A%8F%E6%83%B3/"/>
     
     
-      <category term="Hello World" scheme="http://TimeAlley.github.io/tags/Hello-World/"/>
+      <category term="Hello World" scheme="http://www.timealley.name/tags/Hello-World/"/>
     
   </entry>
   
