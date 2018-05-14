@@ -399,8 +399,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/05/13/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/13/hello-world/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/13/hello-world/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -579,12 +578,10 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
     </div>
 
   
@@ -950,26 +947,6 @@ show_date_time();
 
   
 
-    
-      <script id="dsq-count-scr" src="https://TimeAlley.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://www.timealley.name/2018/05/13/hello-world/';
-          this.page.identifier = '2018/05/13/hello-world/';
-          this.page.title = 'Hello World';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://TimeAlley.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -982,6 +959,10 @@ show_date_time();
   
 
 
+
+
+
+  
 
 
 
@@ -1009,7 +990,7 @@ show_date_time();
       function renderGitment(){
         var gitment = new Gitmint({
             id: window.location.pathname, 
-            owner: 'TimeAlley',
+            owner: '25993828',
             repo: 'Gitment',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
