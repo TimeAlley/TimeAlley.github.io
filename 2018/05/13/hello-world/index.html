@@ -589,6 +589,11 @@
 
   
 
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjQ4OC8xMzAyMw=="></div>
+    </div>
+
 
 
         </div>
@@ -956,6 +961,9 @@ show_date_time();
 
     
       <script type="text/javascript">
+      host = window.location.href;
+      chinadomain = "yourname.github.io";
+      if (host.indexOf(chinadomain)!=-1)  {
         var disqus_config = function () {
           this.page.url = 'http://www.timealley.name/2018/05/13/hello-world/';
           this.page.identifier = '2018/05/13/hello-world/';
@@ -965,6 +973,7 @@ show_date_time();
         s.src = 'https://TimeAlley.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
+      }
       </script>
     
 
