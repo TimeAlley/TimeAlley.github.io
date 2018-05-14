@@ -711,9 +711,6 @@ show_date_time();
 
     
       <script type="text/javascript">
-      host = window.location.href;
-      chinadomain = "timealley.github.io";
-      if (host.indexOf(chinadomain)!=-1)  {
         var disqus_config = function () {
           this.page.url = 'http://www.timealley.name/board/index.html';
           this.page.identifier = 'board/index.html';
@@ -723,7 +720,6 @@ show_date_time();
         s.src = 'https://TimeAlley.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
-      }
       </script>
     
 
@@ -746,9 +742,23 @@ show_date_time();
 
   
     <script type="text/javascript">
-    host = window.location.href;
-    chinadomain = "TimeAlley.coding.me";
-    if (host.indexOf(chinadomain)!=-1){  
+    const s = document.createElement('script')
+    const username = window.disqusProxy.username
+    s.src = `https://${username}.disqus.com/embed.js`
+    s.async = true
+    s.setAttribute('data-timestamp', String(+new Date()))
+    s.onload = () => {
+      this.setState({disqusLoaded: true})
+    }
+    s.onerror = () => {
+      this.setState({disqusLoaded: false})
+      console.log('Failed to load disqus. Load disqus-proxy instead.')
+    }
+
+    document.body.appendChild(s)
+
+    setTimeout(async () => {
+      if (!this.state.disqusLoaded) {
         (function(d, s) {
           var j, e = d.getElementsByTagName(s)[0];
           if (typeof LivereTower === 'function') { return; }
