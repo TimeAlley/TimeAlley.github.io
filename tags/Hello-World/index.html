@@ -720,21 +720,8 @@ show_date_time();
 
 
 <script type="text/javascript">
-function isInChina(cb) {
-  var url = '//graph.facebook.com/feed?callback=h';
-  var xhr = new XMLHttpRequest();
-  var called = false;
-  xhr.open('GET', url);
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      called = true;
-      cb(false);
-    }
-  };
-  xhr.send();
-  // timeout 1s, this facebook API is very fast.
-  setTimeout(function() {
-    if (!called) {
+var xhr = new XMLHttpRequest
+    if (!xhr.open('GET', 'https://lepture.disqus.com/embed.js', true)) {
        (function(d, s) {
           var j, e = d.getElementsByTagName(s)[0];
           if (typeof LivereTower === 'function') { return; }
@@ -743,11 +730,10 @@ function isInChina(cb) {
           j.async = true;
           e.parentNode.insertBefore(j, e);
         })(document, 'script');
-    }
-  }, 1000);
-};
-    </script>
+}
+  </script>
 
+  
 
 
 
