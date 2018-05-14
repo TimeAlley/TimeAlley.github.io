@@ -872,8 +872,28 @@ show_date_time();
 
 
 <script type="text/javascript">
-var xhr = new XMLHttpRequest
-    if (!xhr.open('GET', 'https://lepture.disqus.com/embed.js', true)) {
+function IsLoad(_url,fun){
+  $.ajax({
+      url:_url,
+      type:"get",
+      success:function(){
+        //说明请求的url存在，并且可以访问
+        if($.isFunction(fun)){
+                fun(true);
+              }
+      },
+      statusCode:{
+        404:function(){
+          //说明请求的url不存在
+          if($.isFunction(fun)){
+            fun(false);
+          }
+        }
+      }
+    });
+}
+IsLoad('www.google.com',function(res){
+    if(!res){
        (function(d, s) {
           var j, e = d.getElementsByTagName(s)[0];
           if (typeof LivereTower === 'function') { return; }
@@ -882,10 +902,11 @@ var xhr = new XMLHttpRequest
           j.async = true;
           e.parentNode.insertBefore(j, e);
         })(document, 'script');
-}
+    }
+});
   </script>
 
-  
+ 
 
 
 
