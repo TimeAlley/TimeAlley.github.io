@@ -696,7 +696,6 @@ show_date_time();
   
 
  <script type="text/javascript">
-  var cb = true;
     function isInChina(cb) {
       var url = '//graph.facebook.com/feed?callback=h';
       var xhr = new XMLHttpRequest();
@@ -705,7 +704,7 @@ show_date_time();
       xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           called = true;
-          cb = false;
+          cb(false);
         }
       };
       xhr.send();
@@ -713,22 +712,24 @@ show_date_time();
       setTimeout(function() {
         if (!called) {
           xhr.abort();
-          cb = true;
+          cb(true);
         }
       }, 1000);
     };
-    if(!cb){
+    isInChina(function(inChina) {
+    if(!inChina){
 
-        var disqus_config = function () {
-          this.page.url = '';
-          this.page.identifier = 'tags/Hello-World/index.html';
-          this.page.title = '';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://TimeAlley.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-        }
+          var disqus_config = function () {
+            this.page.url = '';
+            this.page.identifier = 'tags/Hello-World/index.html';
+            this.page.title = '';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://TimeAlley.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+          }
+        })
       </script>
   
 
