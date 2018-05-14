@@ -744,27 +744,23 @@ show_date_time();
 
 
 
-
-
-  
-    <script type="text/javascript">
-    const s = document.createElement('script')
-    s.src = `https://TimeAlley.disqus.com/embed.js`
-    s.async = true
-    s.setAttribute('data-timestamp', String(+new Date()))
-    s.onload = () => {
-      this.setState({disqusLoaded: true})
+<script type="text/javascript">
+function isInChina(cb) {
+  var url = '//graph.facebook.com/feed?callback=h';
+  var xhr = new XMLHttpRequest();
+  var called = false;
+  xhr.open('GET', url);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      called = true;
+      cb(false);
     }
-    s.onerror = () => {
-      this.setState({disqusLoaded: false})
-      console.log('Failed to load disqus. Load disqus-proxy instead.')
-    }
-
-    document.body.appendChild(s)
-
-    setTimeout(async () => {
-      if (!this.state.disqusLoaded) {
-        (function(d, s) {
+  };
+  xhr.send();
+  // timeout 1s, this facebook API is very fast.
+  setTimeout(function() {
+    if (!called) {
+       (function(d, s) {
           var j, e = d.getElementsByTagName(s)[0];
           if (typeof LivereTower === 'function') { return; }
           j = d.createElement(s);
@@ -772,9 +768,10 @@ show_date_time();
           j.async = true;
           e.parentNode.insertBefore(j, e);
         })(document, 'script');
-        }
+    }
+  }, 1000);
+};
     </script>
-  
 
 
 
