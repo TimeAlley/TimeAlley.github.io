@@ -754,7 +754,7 @@ show_date_time();
 	  xhr.onreadystatechange = function() {
 	    if (xhr.readyState === 4 && xhr.status === 200) {
 	      called = true;
-	      cb(false);
+	      cb = false;
 	    }
 	  };
 	  xhr.send();
@@ -762,7 +762,7 @@ show_date_time();
 	  setTimeout(function() {
 	    if (!called) {
 	      xhr.abort();
-	      cb(true);
+	      cb = true;
 	    }
 	  }, 1000);
 	};
