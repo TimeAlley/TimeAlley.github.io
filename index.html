@@ -896,8 +896,7 @@ show_date_time();
 
 
 <script type="text/javascript">
-	var cb = 0;
-	function isInChina(num) {
+		function isInChina(cb) {
 	  var url = '//graph.facebook.com/feed?callback=h';
 	  var xhr = new XMLHttpRequest();
 	  var called = false;
@@ -905,8 +904,7 @@ show_date_time();
 	  xhr.onreadystatechange = function() {
 	    if (xhr.readyState === 4 && xhr.status === 200) {
 	      called = true;
-	      num = 0;
-	      return num;
+	      cb(false);
 	    }
 	  };
 	  xhr.send();
@@ -914,21 +912,22 @@ show_date_time();
 	  setTimeout(function() {
 	    if (!called) {
 	      xhr.abort();
-	      num = 1;
-	      return num;
+	      cb(true);
 	    }
 	  }, 1000);
 	};
-    if(isInChina(cb)){
-       (function(d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-          if (typeof LivereTower === 'function') { return; }
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-          e.parentNode.insertBefore(j, e);
-        })(document, 'script');
-    }
+	    isInChina(function(inChina) {
+	    if (inChina){
+	       	(function(d, s) {
+	          var j, e = d.getElementsByTagName(s)[0];
+	          if (typeof LivereTower === 'function') { return; }
+	          j = d.createElement(s);
+	          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+	          j.async = true;
+	          e.parentNode.insertBefore(j, e);
+	        })(document, 'script');
+        }
+    })
   </script>
 
  
