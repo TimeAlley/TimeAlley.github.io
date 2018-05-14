@@ -953,15 +953,30 @@ show_date_time();
 
   
 
+ <script type="text/javascript">
+  var cb = true;
+    function isInChina(cb) {
+      var url = '//graph.facebook.com/feed?callback=h';
+      var xhr = new XMLHttpRequest();
+      var called = false;
+      xhr.open('GET', url);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          called = true;
+          cb = false;
+        }
+      };
+      xhr.send();
+      // timeout 1s, this facebook API is very fast.
+      setTimeout(function() {
+        if (!called) {
+          xhr.abort();
+          cb = true;
+        }
+      }, 1000);
+    };
+    if(!cb){
 
-  
-
-    
-      <script id="dsq-count-scr" src="https://TimeAlley.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
         var disqus_config = function () {
           this.page.url = 'http://www.timealley.name/2018/05/13/hello-world/';
           this.page.identifier = '2018/05/13/hello-world/';
@@ -971,12 +986,9 @@ show_date_time();
         s.src = 'https://TimeAlley.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
+        }
       </script>
-    
-
   
-
-
 
 
 	
