@@ -872,28 +872,28 @@ show_date_time();
 
 
 <script type="text/javascript">
-function IsLoad(_url,fun){
-  $.ajax({
-      url:_url,
-      type:"get",
-      success:function(){
-        //说明请求的url存在，并且可以访问
-        if($.isFunction(fun)){
-                fun(true);
-              }
-      },
-      statusCode:{
-        404:function(){
-          //说明请求的url不存在
-          if($.isFunction(fun)){
-            fun(false);
-          }
-        }
-      }
-    });
-}
-IsLoad('www.google.com',function(res){
-    if(!res){
+	var cb = true;
+	function isInChina(cb) {
+	  var url = '//graph.facebook.com/feed?callback=h';
+	  var xhr = new XMLHttpRequest();
+	  var called = false;
+	  xhr.open('GET', url);
+	  xhr.onreadystatechange = function() {
+	    if (xhr.readyState === 4 && xhr.status === 200) {
+	      called = true;
+	      cb(false);
+	    }
+	  };
+	  xhr.send();
+	  // timeout 1s, this facebook API is very fast.
+	  setTimeout(function() {
+	    if (!called) {
+	      xhr.abort();
+	      cb(true);
+	    }
+	  }, 1000);
+	};
+    if(cb){
        (function(d, s) {
           var j, e = d.getElementsByTagName(s)[0];
           if (typeof LivereTower === 'function') { return; }
