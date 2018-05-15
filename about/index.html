@@ -733,13 +733,13 @@ show_date_time();
         }
       };
       xhr.send();
-      // timeout 1s, this facebook API is very fast.
+      // timeout 2s, this facebook API is very fast.
       setTimeout(function() {
         if (!called) {
           xhr.abort();
           cb(true);
         }
-      }, 1000);
+      }, 2000);
     };
     isInChina(function(inChina) {
     if(!inChina){
@@ -782,13 +782,13 @@ show_date_time();
 	    }
 	  };
 	  xhr.send();
-	  // timeout 1s, this facebook API is very fast.
+	  // timeout 2s, this facebook API is very fast.
 	  setTimeout(function() {
 	    if (!called) {
 	      xhr.abort();
 	      cb(true);
 	    }
-	  }, 1000);
+	  }, 2000);
 	};
 	    isInChina(function(inChina) {
 	    if (inChina){
