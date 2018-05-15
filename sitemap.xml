@@ -2,23 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.timealley.name/photo/index.html</loc>
+    <loc>http://www.timealley.name/2018/05/13/hello-world/</loc>
     
-    <lastmod>2018-05-15T08:42:24.113Z</lastmod>
+    <lastmod>2018-05-15T11:42:43.825Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.timealley.name/photo/Pivix_1.html</loc>
+    <loc>http://www.timealley.name/categories/index.html</loc>
     
-    <lastmod>2018-05-15T08:33:33.914Z</lastmod>
+    <lastmod>2018-05-15T11:42:10.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.timealley.name/board/index.html</loc>
+    
+    <lastmod>2018-05-15T11:40:57.873Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.timealley.name/photo/index.html</loc>
+    
+    <lastmod>2018-05-15T11:39:42.634Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.timealley.name/photo/Pivix_2.html</loc>
     
-    <lastmod>2018-05-15T08:29:07.786Z</lastmod>
+    <lastmod>2018-05-15T11:38:34.893Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.timealley.name/photo/Pivix_1.html</loc>
+    
+    <lastmod>2018-05-15T11:36:39.536Z</lastmod>
     
   </url>
   
@@ -30,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://www.timealley.name/2018/05/13/hello-world/</loc>
-    
-    <lastmod>2018-05-15T02:41:55.673Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.timealley.name/about/index.html</loc>
     
     <lastmod>2018-05-13T13:46:06.250Z</lastmod>
@@ -44,23 +58,9 @@
   </url>
   
   <url>
-    <loc>http://www.timealley.name/board/index.html</loc>
-    
-    <lastmod>2018-05-12T16:23:03.607Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.timealley.name/tags/index.html</loc>
     
     <lastmod>2018-05-12T16:09:15.512Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.timealley.name/categories/index.html</loc>
-    
-    <lastmod>2018-05-12T16:08:59.584Z</lastmod>
     
   </url>
   
