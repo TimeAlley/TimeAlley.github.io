@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="TimeAlley,拾光宅巷，博客，ACGN" />
+  <meta name="keywords" content="MySQL,Linux,CentOs,Windows," />
 
 
 
@@ -112,22 +112,18 @@
     })();
 </script>
 
-<meta name="description" content="2018/05/13">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pivix">
-<meta property="og:url" content="http://www.timealley.name/photo/Pivix_1.html">
+<meta name="description" content="因为最近需要学习后端方面的知识，所以开始接触MySQL，中间踩了很多坑（无论是Windows端还是Linux端），花了两天才完全配好。写下这篇文章就算是个对MySQL安装的记录吧。">
+<meta name="keywords" content="MySQL,Linux,CentOs,Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL的安装与基本配置">
+<meta property="og:url" content="http://www.timealley.name/2018/06/06/mysql_init/index.html">
 <meta property="og:site_name" content="拾光宅巷">
-<meta property="og:description" content="2018/05/13">
+<meta property="og:description" content="因为最近需要学习后端方面的知识，所以开始接触MySQL，中间踩了很多坑（无论是Windows端还是Linux端），花了两天才完全配好。写下这篇文章就算是个对MySQL安装的记录吧。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p8rcj38vb.bkt.clouddn.com/18/5/1561621237_p0.jpg">
-<meta property="og:image" content="http://p8rcj38vb.bkt.clouddn.com/18/5/1568315220_p0.jpg">
-<meta property="og:image" content="http://p8rcj38vb.bkt.clouddn.com/18/5/1563485632_p0.jpg">
-<meta property="og:image" content="http://p8rcj38vb.bkt.clouddn.com/18/5/1563862914_p0.jpg">
-<meta property="og:updated_time" content="2018-05-15T11:36:39.536Z">
+<meta property="og:updated_time" content="2018-06-06T16:22:13.391Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pivix">
-<meta name="twitter:description" content="2018/05/13">
-<meta name="twitter:image" content="http://p8rcj38vb.bkt.clouddn.com/18/5/1561621237_p0.jpg">
+<meta name="twitter:title" content="MySQL的安装与基本配置">
+<meta name="twitter:description" content="因为最近需要学习后端方面的知识，所以开始接触MySQL，中间踩了很多坑（无论是Windows端还是Linux端），花了两天才完全配好。写下这篇文章就算是个对MySQL安装的记录吧。">
 
 
 
@@ -157,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="http://www.timealley.name/photo/Pivix_1.html"/>
+  <link rel="canonical" href="http://www.timealley.name/2018/06/06/mysql_init/"/>
 
 
 
 
 
-  <title>Pivix | 拾光宅巷</title>
+  <title>MySQL的安装与基本配置 | 拾光宅巷</title>
   
 
 
@@ -342,38 +338,293 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.timealley.name/2018/06/06/mysql_init/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TimeAlley">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="拾光宅巷">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">Pivix</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <!--
-<div class="phototitle"></div>
--->
-<div class="phototitle_h1">2018/05/13</div>
-
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://p8rcj38vb.bkt.clouddn.com/18/5/1561621237_p0.jpg" alt="1(2018-05-13)" title="Pivix"></div><div class="group-picture-column" style="width: 50%;"><img src="http://p8rcj38vb.bkt.clouddn.com/18/5/1568315220_p0.jpg" alt="2(2018-05-13)" title="Pivix"></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://p8rcj38vb.bkt.clouddn.com/18/5/1563485632_p0.jpg" alt="3(2018-05-13)" title="Pivix"></div><div class="group-picture-column" style="width: 50%;"><img src="http://p8rcj38vb.bkt.clouddn.com/18/5/1563862914_p0.jpg" alt="4(2018-05-13)" title="Pivix"></div></div></div></div>
+          <h1 class="post-title" itemprop="name headline">MySQL的安装与基本配置</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T23:53:09+08:00">
+                2018-06-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/06/mysql_init/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/06/mysql_init/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,046字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>因为最近需要学习后端方面的知识，所以开始接触MySQL，中间踩了很多坑（无论是Windows端还是Linux端），花了两天才完全配好。写下这篇文章就算是个对MySQL安装的记录吧。</p>
+<a id="more"></a>
+<h3 id="Windows端"><a href="#Windows端" class="headerlink" title="Windows端"></a><strong>Windows端</strong></h3><h4 id="1、前期准备"><a href="#1、前期准备" class="headerlink" title="1、前期准备"></a>1、前期准备</h4><p>首先，前往<a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL官网</a>下载相关的Windows端压缩包。<span style="color:red">注意！这里需要提醒的是，千万千万不要下载最新版本的MySQL！最新版本是MySQL8（截至2018.6.6），这个版本现阶段Bug奇多，而且网上没有对应的教程！</span><span style="color:blue">本人建议下载5.6左右的版本，这几个是现在网上教程比较多、Bug相对较少的版本。</span>下载后解压，自定义安装到自己喜欢的地址。然后，在你的MySQL安装目录下，会有一个my-default.ini的配置文件。此时我们需要稍微修改一下这个配置文件。我的ini文件配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line"># http://dev.mysql.com/doc/refman/5.6/en/server-configuration-defaults.html</span><br><span class="line"># *** DO NOT EDIT THIS FILE. It&apos;s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line"># basedir = .....</span><br><span class="line"># datadir = .....</span><br><span class="line"># port = .....</span><br><span class="line"># server_id = .....</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M </span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br></pre></td></tr></table></figure></p>
+<p>配置完ini文件后，我们的前期准备工作就完成了。</p>
+<h4 id="2、启动MySQL数据库"><a href="#2、启动MySQL数据库" class="headerlink" title="2、启动MySQL数据库"></a>2、启动MySQL数据库</h4><p>现在我们已经可以开始尝试启动MySQL数据库了，主要的命令有三个。以我的Windows为例，<span style="color:red">先以管理员身份打开cmd</span>，然后键入<code>D:</code>(更改磁盘目录，我的MySQL安装在D盘，所以要修改路径，cmd路径默认为C)。更改到D盘后，可以看到<code>D:\&gt;</code>的标志。然后进入MySQL的bin目录所在地：<code>cd D:\mysql-5.6.37-winx64\mysql-5.6.37-winx64\bin</code>。此时我们已经进入到了MySQL的bin目录，如果你是5.7以下的版本，再分别输入以下命令：<code>mysqld install</code>和<code>net start mysql</code>即可。如果是5.7版本，则需要在<code>mysqld install</code>后键入命令<code>mysqld --initialize-insecure</code>以进行data目录的初始化。</p>
+<p><span style="color:red">注意：在输入<code>mysqld install</code>时，可能会出现msvcp100.dll缺失的报错，此时只要到微软官网下载<a href="https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=14632" target="_blank" rel="noopener">VS_2010_vcredist_x64</a>即可。</span></p>
+<h4 id="3、登陆并设置MySQL密码"><a href="#3、登陆并设置MySQL密码" class="headerlink" title="3、登陆并设置MySQL密码"></a>3、登陆并设置MySQL密码</h4><p>在当前目录下（bin目录）输入<code>mysql -u root -p</code>，此时会出现<span style="color:green">Enter password：</span>语句，因为我们是初次登陆MySQL，所以直接按下<strong>Enter</strong>键即可。进入MySQL后cmd显示如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Welcome to the MySQL monitor.  Commands end with ; or \g.</span><br><span class="line">Your MySQL connection id is 2</span><br><span class="line">Server version: 5.6.37 MySQL Community Server (GPL)</span><br><span class="line"></span><br><span class="line">Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.</span><br><span class="line"></span><br><span class="line">Oracle is a registered trademark of Oracle Corporation and/or its</span><br><span class="line">affiliates. Other names may be trademarks of their respective</span><br><span class="line">owners.</span><br><span class="line"></span><br><span class="line">Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.</span><br><span class="line"></span><br><span class="line">mysql&gt;</span><br></pre></td></tr></table></figure></p>
+<p>现在我们可以开始设置自己root账户的密码。输入<code>set password=password(&#39;你想要设置的密码&#39;);</code>即可。</p>
+<h4 id="4、系统环境变量的设置"><a href="#4、系统环境变量的设置" class="headerlink" title="4、系统环境变量的设置"></a>4、系统环境变量的设置</h4><p>如果我们每次使用MySQL，都要先进入到MySQL所在盘，再进入MySQL所在的bin目录，就会很麻烦。这时，我们可以通过设置系统的环境变量来简化过程，使得我们可以在cmd的初始界面就可以进入MySQL。打开此电脑-&gt;属性-&gt;高级-&gt;环境变量，在用户变量的path中<span style="color:red">追加</span><code>D:\mysql-5.6.37-winx64\mysql-5.6.37-winx64\bin；</code>（此处填你的MySQL的bin文件夹路径）此时再打开cmd，直接打<code>mysql</code>即可进入数据库。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">C:\Users&gt;mysql</span><br><span class="line">Welcome to the MySQL monitor.  Commands end with ; or \g.</span><br><span class="line">Your MySQL connection id is 4</span><br><span class="line">Server version: 5.6.37 MySQL Community Server (GPL)</span><br><span class="line"></span><br><span class="line">Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.</span><br><span class="line"></span><br><span class="line">Oracle is a registered trademark of Oracle Corporation and/or its</span><br><span class="line">affiliates. Other names may be trademarks of their respective</span><br><span class="line">owners.</span><br><span class="line"></span><br><span class="line">Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.</span><br><span class="line"></span><br><span class="line">mysql&gt;</span><br></pre></td></tr></table></figure></p>
+<h4 id="5、GUI工具及其它"><a href="#5、GUI工具及其它" class="headerlink" title="5、GUI工具及其它"></a>5、GUI工具及其它</h4><ul>
+<li><a href="https://www.webyog.com/product/sqlyog" target="_blank" rel="noopener">sqlyog</a>(可能要翻墙)：轻量级数据库可视化工具，能节省很多时间。</li>
+<li>cmd中的启动和停止服务命令：<code>net stop mysql</code>和<code>net start mysql</code></li>
+<li>cmd中退出mysql环境的命令:<code>exit</code></li>
+</ul>
+<h3 id="Linux端"><a href="#Linux端" class="headerlink" title="Linux端"></a><strong>Linux端</strong></h3><h4 id="1、下载与安装"><a href="#1、下载与安装" class="headerlink" title="1、下载与安装"></a>1、下载与安装</h4><p><strong>声明：本人Linux环境为CentOs7.3，Ubuntu的会有所不同</strong><br>首先，使用<code>yum</code>安装MySQL：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install mysql-server -y</span><br></pre></td></tr></table></figure></p>
+<p>安装完成后，启动 MySQL 服务：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld restart</span><br></pre></td></tr></table></figure></p>
+<p>设置 MySQL 账户 root 密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/mysqladmin -u root password <span class="string">'你想要设置的密码'</span></span><br></pre></td></tr></table></figure></p>
+<p>将 MySQL 设置为开机自动启动：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig mysqld on</span><br></pre></td></tr></table></figure></p>
+<p>到这步，我们在Linux下的MySQL安装就基本完成了，现在我们已经可以在Linux内愉快的使用MySQL啦~~</p>
+<h4 id="2、开启远程连接"><a href="#2、开启远程连接" class="headerlink" title="2、开启远程连接"></a>2、开启远程连接</h4><p>上面的Windows端介绍了sqlyog这款可视化工具。其实它不仅可以用于Windows端的mysql，也可以远程连接Linux服务器下的MySQL。</p>
+<p>具体配置方法如下：<br>在MySQL控制台下分别输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on *.* to &apos;root&apos;@&apos;%&apos; identified by &apos;123456&apos; with grant option; # root是用户名，%代表任意主机，&apos;123456&apos;指定的登录密码（这个和本地的root密码可以设置不同的，互不影响）</span><br><span class="line">flush privileges; # 重载系统权限</span><br><span class="line">exit;</span><br></pre></td></tr></table></figure></p>
+<p>此时已经设置好了MySQL的远程连接设置，接下来就是开放端口（一般是3306或3309）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// --permanent 永久生效,没有此参数重启后失效</span><br><span class="line">firewall-cmd --zone=public --add-port=3306/tcp --permanent</span><br></pre></td></tr></table></figure></p>
+<p>关于CentOs7的firewalld设置具体可以看<a href="https://www.cnblogs.com/moxiaoan/p/5683743.html" target="_blank" rel="noopener">CentOS7使用firewalld打开关闭防火墙与端口</a>或<a href="https://blog.csdn.net/weiyangdong/article/details/79540217" target="_blank" rel="noopener">Centos7开放3306端口</a>。</p>
+<h4 id="3、修改编码格式"><a href="#3、修改编码格式" class="headerlink" title="3、修改编码格式"></a>3、修改编码格式</h4><p>当我们使用MySQL的时候，可能会遇到出现中文乱码的情况，这是为什么呢？我们可以在MySQL控制台下输入<code>show variables like &#39;character%&#39;;</code>命令来查看一下。你会发现，编码格式并不全都是utf8，在database一栏编码格式为latin1，这是MySQL的默认编码。也正是因此，中文输入才会在数据库中变成乱码。这个时候，我们就要修改MySQL的my.cnf配置文件了，具体修改如下：<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 如果没有client和mysql栏就不必添加上去了，配置的核心在于mysqld</span><br><span class="line">[client]</span><br><span class="line">port = 3306</span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"><span class="addition">+ default-character-set=utf8</span></span><br><span class="line">...</span><br><span class="line">[mysqld]</span><br><span class="line">port = 3306</span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"><span class="addition">+ character-set-server=utf8</span></span><br><span class="line">...</span><br><span class="line">[mysql]</span><br><span class="line">no-auto-rehash</span><br><span class="line"><span class="addition">+ default-character-set=utf8</span></span><br></pre></td></tr></table></figure></p>
+<p>修改完成之后，在Linux命令行下输入<code>service mysql restart</code>重启mysql服务。这时在MySQL控制台再次输入<code>show variables like &#39;character%&#39;;</code>，就会发现，原本是latin1的都变成了utf8，这时，一般来说，就已经不会出现中文乱码了。</p>
+<p><strong><span style="color:red">注意</span>：以上是一般情况，有时会出现极其特殊的情况，那就是，你什么都配置成功了，服务器端、网页端等等等等都是utf-8编码，但显示数据库就是中文乱码！！这时基本就只有一个办法了，那就是，每次你要进行增删改查前，都先进行<code>SET NAMES &#39;UTF8&#39;;</code>的操作。比如我用的是php语言，我在每次insert前都先来一句<code>mysqli_query(&quot;SET NAMES UTF8&quot;);</code>以便不会出现中文乱码。同时，我个人认为，即使你的MySQL一切正常，也应该输入这条语句，因为它能让你的网页（或其它吧）在更多的服务器上正常的显示（有些可能就是乱码，怎么设置都没辙…当然也可能是因为我菜吧….）。</strong></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><p>这次弄MySQL，一是因为web程序设计课需要用到，二是我们大创也有涉及到数据库的使用，所以就不辞劳苦、百费周折的搞了出来。其实说实话，我一个懒宅，本来是不想搞这些麻烦事的，但是，唉（<del>无奈+委屈</del>）…</p>
+
       
     </div>
     
     
     
+
+   <div>
+  
+    
+<div style="text-align:center;color: #ccc;font-size:14px;">
+------ 本文结束 ------</div>
+<br/>
+<div style="border: 1px solid black">
+<div style="margin-left:10px">
+<span style="font-weight:blod">版权声明</span>
+<!--
+<img src="" >
+-->
+<br/>
+<p style="font-size: 10px;line-height: 30px"><a href="http://timealley.name" style="color:#258FC6">拾光宅巷</a> by <a href="http://timealley.name" style="color:#258FC6">TimeAlley</a> is licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#258FC6">Creative Commons BY-NC-ND 4.0 International License</a>.<br/>
+由<a href="http://timealley.name" style="color:#258FC6">TimeAlley</a>创作并维护的<a href="http://timealley.name" style="color:#258FC6">拾光宅巷</a>博客采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#258FC6">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br/>
+本文首发于<a href="http://timealley.name" style="color:#258FC6">拾光宅巷</a> 博客（ <a href="http://timealley.name" style="color:#258FC6">http://timealley.name</a> ），版权所有，侵权必究。</p>
+</div>
+</div>
+
+  
+</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"> <i class="fa fa-tag"></i> MySQL</a>
+          
+            <a href="/tags/Linux/" rel="tag"> <i class="fa fa-tag"></i> Linux</a>
+          
+            <a href="/tags/CentOs/" rel="tag"> <i class="fa fa-tag"></i> CentOs</a>
+          
+            <a href="/tags/Windows/" rel="tag"> <i class="fa fa-tag"></i> Windows</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/13/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!--MOB SHARE BEGIN-->
+<div class="-hoofoo-share-title">分享到：</div>
+<div class="-hoofoo-share-buttons">
+    <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button"><i class="fa fa-weibo" aria-hidden="true"></i></div>
+    <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+    <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button"><i class="fa fa-qq" aria-hidden="true"></i></div>
+    <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+        <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-weixin"><p>微信</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=25caefd792a3e"></script>
+<!--MOB SHARE END-->
+      
+    </div>
   </div>
 
 
@@ -422,8 +673,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -521,6 +781,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows端"><span class="nav-number">1.</span> <span class="nav-text">Windows端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、前期准备"><span class="nav-number">1.1.</span> <span class="nav-text">1、前期准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、启动MySQL数据库"><span class="nav-number">1.2.</span> <span class="nav-text">2、启动MySQL数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、登陆并设置MySQL密码"><span class="nav-number">1.3.</span> <span class="nav-text">3、登陆并设置MySQL密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、系统环境变量的设置"><span class="nav-number">1.4.</span> <span class="nav-text">4、系统环境变量的设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、GUI工具及其它"><span class="nav-number">1.5.</span> <span class="nav-text">5、GUI工具及其它</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux端"><span class="nav-number">2.</span> <span class="nav-text">Linux端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、下载与安装"><span class="nav-number">2.1.</span> <span class="nav-text">1、下载与安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、开启远程连接"><span class="nav-number">2.2.</span> <span class="nav-text">2、开启远程连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、修改编码格式"><span class="nav-number">2.3.</span> <span class="nav-text">3、修改编码格式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -759,9 +1035,9 @@ show_date_time();
     if(!inChina){
 
           var disqus_config = function () {
-            this.page.url = 'http://www.timealley.name/photo/Pivix_1.html';
-            this.page.identifier = 'photo/Pivix_1.html';
-            this.page.title = 'Pivix';
+            this.page.url = 'http://www.timealley.name/2018/06/06/mysql_init/';
+            this.page.identifier = '2018/06/06/mysql_init/';
+            this.page.title = 'MySQL的安装与基本配置';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://TimeAlley.disqus.com/embed.js';
